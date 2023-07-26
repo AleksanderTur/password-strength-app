@@ -29,11 +29,11 @@ class AddPassword extends Component {
     const lessThenEightCharacters = text.length > 0 && text.length < 8;
     const easyVerification = text.length > 7;
     const mediumVerification =
-      (/\W+/g.test(text) && /[A-ZА-ЯЁ]+/i.test(text)) ||
+      (/\W+/g.test(text) && /[A-Z]+/i.test(text)) ||
       (/\W+/g.test(text) && /\d/g.test(text)) ||
-      (/[A-ZА-ЯЁ]+/i.test(text) && /\d/g.test(text));
+      (/[A-Z]+/i.test(text) && /\d/g.test(text));
     const strongVerification =
-      /\W+/g.test(text) && /[A-ZА-ЯЁ]+/i.test(text) && /\d/g.test(text);
+      /\W+/g.test(text) && /[A-Z]+/i.test(text) && /\d/g.test(text);
 
     const passwordMedium = easyVerification && mediumVerification;
     const passwordStrong = easyVerification && strongVerification;
