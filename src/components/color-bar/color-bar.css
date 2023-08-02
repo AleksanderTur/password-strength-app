@@ -1,0 +1,19 @@
+.color-bar__container {
+  width: 100%;
+  height: 10px;
+  background-color: #d6d3d3;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+
+.color-bar__container--red {
+  background-color: #f83c3c;
+}
+
+.color-bar__container--yellow {
+  background-color: #eee678;
+}
+
+.color-bar__container--green {
+  background-color: #44c662;
+}

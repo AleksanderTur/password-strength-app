@@ -1,0 +1,5 @@
+.strength-indicator__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
